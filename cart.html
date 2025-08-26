@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warenkorb - HardwareTech</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="HardwareTech Logo" class="logo-img">
+                    <span class="logo-text">HardwareTech</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Start</a></li>
+                        <li><a href="products.html" class="nav-link">Produkte</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                        <li><a href="cart.html" class="nav-link cart-link active">
+                            🛒 <span class="cart-count" id="cartCount">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Warenkorb</h1>
+            
+            <div class="cart-content">
+                <div class="cart-items" id="cartItems">
+                    <!-- Wird dynamisch geladen -->
+                </div>
+                
+                <div class="cart-empty" id="cartEmpty" style="display: none;">
+                    <div class="empty-cart-message">
+                        <h2>Ihr Warenkorb ist leer</h2>
+                        <p>Entdecken Sie unsere Premium Hardware-Produkte!</p>
+                        <a href="products.html" class="btn btn-primary">Produkte entdecken</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary" id="cartSummary" style="display: none;">
+                    <div class="summary-card">
+                        <h3>Bestellübersicht</h3>
+                        <div class="summary-row">
+                            <span>Zwischensumme:</span>
+                            <span id="subtotal">0,00€</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Versandkosten:</span>
+                            <span id="shipping">0,00€</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>MwSt. (19%):</span>
+                            <span id="tax">0,00€</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Gesamtsumme:</span>
+                            <span id="total">0,00€</span>
+                        </div>
+                        <button class="btn btn-primary btn-full" id="checkoutBtn">
+                            Zur Kasse
+                        </button>
+                        <p class="shipping-info">
+                            📦 Kostenloser Versand ab 500€<br>
+                            🚚 Express-Lieferung verfügbar
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Bestellung abschließen</h2>
+                <span class="modal-close" id="closeCheckout">&times;</span>
+            </div>
+            <form class="checkout-form" id="checkoutForm">
+                <div class="form-section">
+                    <h3>Rechnungsadresse</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Vorname *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nachname *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Straße und Hausnummer *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipCode">PLZ *</label>
+                            <input type="text" id="zipCode" name="zipCode" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Stadt *</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Zahlungsart</h3>
+                    <div class="payment-methods">
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="paypal" checked>
+                            <span>PayPal</span>
+                        </label>
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="credit">
+                            <span>Kreditkarte</span>
+                        </label>
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="bank">
+                            <span>Banküberweisung</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            Ich akzeptiere die <a href="agb.html" target="_blank">AGB</a> und <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> *
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="checkout-summary">
+                    <div class="summary-row total">
+                        <span>Gesamtsumme:</span>
+                        <span id="checkoutTotal">0,00€</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">
+                    Kostenpflichtig bestellen
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HardwareTech</h4>
+                    <p>Premium Computer Hardware für Gaming, Workstations und Server.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="products.html">Produkte</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HardwareTech. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>

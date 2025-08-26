@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TechVision</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="TechVision Logo" class="logo-img">
+                    <span class="logo-text">TechVision</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Start</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link active">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <h1>Expertenbereich</h1>
+                        <p>Melden Sie sich an, um Zugang zu exklusiven Inhalten zu erhalten</p>
+                    </div>
+                    
+                    <form class="login-form" id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Benutzername</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Passwort</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="remember" name="remember">
+                                <span class="checkmark"></span>
+                                Angemeldet bleiben
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Anmelden</button>
+                    </form>
+                    
+                    <div class="login-message" id="loginMessage" style="display: none;"></div>
+                    
+                    <div class="login-footer">
+                        <p><a href="#" class="forgot-password">Passwort vergessen?</a></p>
+                        <div class="demo-credentials">
+                            <h4>Demo-Zugangsdaten:</h4>
+                            <p><strong>Benutzername:</strong> demo<br>
+                            <strong>Passwort:</strong> demo123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Geschützter Bereich (wird nach Login angezeigt) -->
+    <div class="protected-area" id="protectedArea" style="display: none;">
+        <div class="container">
+            <div class="protected-header">
+                <h1>Willkommen im Expertenbereich</h1>
+                <button class="btn btn-secondary" id="logoutBtn">Abmelden</button>
+            </div>
+            
+            <div class="expert-content">
+                <div class="expert-grid">
+                    <div class="expert-card">
+                        <h3>🔬 Forschungsberichte</h3>
+                        <p>Zugang zu aktuellen Forschungsergebnissen und technischen Analysen.</p>
+                        <ul>
+                            <li><a href="#">Quantum Computing Roadmap 2024</a></li>
+                            <li><a href="#">AI Ethics Framework</a></li>
+                            <li><a href="#">Blockchain Scalability Study</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expert-card">
+                        <h3>📊 Marktanalysen</h3>
+                        <p>Detaillierte Marktanalysen und Trendprognosen für verschiedene Technologiesektoren.</p>
+                        <ul>
+                            <li><a href="#">Tech Market Outlook Q1 2024</a></li>
+                            <li><a href="#">Startup Investment Trends</a></li>
+                            <li><a href="#">Enterprise Software Analysis</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expert-card">
+                        <h3>🛠️ Technische Dokumentation</h3>
+                        <p>Umfassende technische Dokumentationen und Best Practices.</p>
+                        <ul>
+                            <li><a href="#">Cloud Architecture Patterns</a></li>
+                            <li><a href="#">Security Implementation Guide</a></li>
+                            <li><a href="#">DevOps Automation Toolkit</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expert-card">
+                        <h3>🎯 Strategische Insights</h3>
+                        <p>Strategische Empfehlungen für Technologieentscheidungen.</p>
+                        <ul>
+                            <li><a href="#">Digital Transformation Roadmap</a></li>
+                            <li><a href="#">Technology ROI Calculator</a></li>
+                            <li><a href="#">Innovation Management Framework</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="expert-articles">
+                    <h2>Exklusive Fachartikel</h2>
+                    
+                    <article class="expert-article">
+                        <h3>Die Zukunft der Edge Computing Architektur</h3>
+                        <div class="article-meta">
+                            <span>Von Dr. Thomas Schneider</span> • <span>Nur für Experten</span>
+                        </div>
+                        <p><strong>Edge Computing</strong> revolutioniert die Art, wie wir Daten verarbeiten und speichern. In diesem detaillierten Artikel analysieren wir die neuesten Entwicklungen in der Edge-Architektur und deren Auswirkungen auf verschiedene Industriezweige.</p>
+                        
+                        <h4>Kernkomponenten moderner Edge-Systeme:</h4>
+                        <ul>
+                            <li><strong>Micro Data Centers:</strong> Dezentrale Rechenkapazitäten</li>
+                            <li><strong>5G Integration:</strong> Ultra-niedrige Latenz</li>
+                            <li><strong>AI at the Edge:</strong> Lokale Intelligenz</li>
+                            <li><strong>Security Frameworks:</strong> Verteilte Sicherheitskonzepte</li>
+                        </ul>
+                        
+                        <p>Die Implementierung erfordert eine durchdachte Strategie und berücksichtigt sowohl technische als auch organisatorische Aspekte. Unternehmen müssen ihre bestehende Infrastruktur evaluieren und schrittweise auf Edge-Computing-Lösungen migrieren.</p>
+                        
+                        <blockquote>
+                            "Edge Computing ist nicht nur eine technologische Evolution, sondern eine fundamentale Veränderung in der Art, wie wir über Datenverarbeitung denken." - Dr. Thomas Schneider
+                        </blockquote>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechVision</h4>
+                    <p>Innovative Technologielösungen für eine digitale Zukunft.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

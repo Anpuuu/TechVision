@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TechVision</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="TechVision Logo" class="logo-img">
+                    <span class="logo-text">TechVision</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Start</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="page-title">TechVision Blog</h1>
+                <p class="page-subtitle">Expertenwissen und Einblicke in die Welt der Technologie</p>
+            </div>
+
+            <div class="blog-content">
+                <div class="blog-main">
+                    <article class="blog-post">
+                        <header class="post-header">
+                            <img src="/placeholder.svg?height=250&width=600" alt="Zukunft der Arbeit" class="post-image">
+                            <div class="post-meta">
+                                <time datetime="2024-01-20">20. Januar 2024</time>
+                                <span class="post-author">Von Dr. Michael Weber</span>
+                                <span class="post-category">Zukunftstechnologien</span>
+                            </div>
+                            <h2><a href="#post1">Die Zukunft der Arbeit: Remote, Hybrid oder zurück ins Büro?</a></h2>
+                        </header>
+                        <div class="post-excerpt">
+                            <p>Die Pandemie hat die Arbeitswelt nachhaltig verändert. **Remote Work** und **hybride Arbeitsmodelle** sind zur neuen Normalität geworden. Doch welche Auswirkungen hat dies auf Produktivität, Kreativität und Unternehmenskultur?</p>
+                            <p>In diesem Artikel analysieren wir die verschiedenen Arbeitsmodelle und ihre Vor- und Nachteile...</p>
+                            <a href="#post1" class="read-more-btn">Vollständigen Artikel lesen</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <header class="post-header">
+                            <img src="/placeholder.svg?height=250&width=600" alt="Blockchain Revolution" class="post-image">
+                            <div class="post-meta">
+                                <time datetime="2024-01-18">18. Januar 2024</time>
+                                <span class="post-author">Von Sarah Müller</span>
+                                <span class="post-category">Blockchain</span>
+                            </div>
+                            <h2><a href="#post2">Blockchain jenseits von Kryptowährungen: Reale Anwendungsfälle</a></h2>
+                        </header>
+                        <div class="post-excerpt">
+                            <p>Während **Bitcoin** und andere Kryptowährungen die Schlagzeilen dominieren, bietet die **Blockchain-Technologie** weit mehr Potenzial. Von Supply Chain Management bis hin zu digitalen Identitäten - die Möglichkeiten sind vielfältig.</p>
+                            <p>Entdecken Sie praktische Anwendungsfälle, die bereits heute implementiert werden...</p>
+                            <a href="#post2" class="read-more-btn">Vollständigen Artikel lesen</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <header class="post-header">
+                            <img src="/placeholder.svg?height=250&width=600" alt="Quantencomputing" class="post-image">
+                            <div class="post-meta">
+                                <time datetime="2024-01-15">15. Januar 2024</time>
+                                <span class="post-author">Von Prof. Dr. Anna Schmidt</span>
+                                <span class="post-category">Quantentechnologie</span>
+                            </div>
+                            <h2><a href="#post3">Quantencomputing: Wann wird es Realität?</a></h2>
+                        </header>
+                        <div class="post-excerpt">
+                            <p>**Quantencomputer** versprechen, komplexe Probleme zu lösen, die für klassische Computer unlösbar sind. Doch wann werden sie tatsächlich praktisch einsetzbar sein?</p>
+                            <p>Ein Blick auf den aktuellen Stand der Forschung und die Herausforderungen...</p>
+                            <a href="#post3" class="read-more-btn">Vollständigen Artikel lesen</a>
+                        </div>
+                    </article>
+
+                    <!-- Vollständige Artikel (normalerweise auf separaten Seiten) -->
+                    <article class="blog-post full-post" id="post1" style="display: none;">
+                        <header class="post-header">
+                            <img src="/placeholder.svg?height=250&width=600" alt="Zukunft der Arbeit" class="post-image">
+                            <div class="post-meta">
+                                <time datetime="2024-01-20">20. Januar 2024</time>
+                                <span class="post-author">Von Dr. Michael Weber</span>
+                                <span class="post-category">Zukunftstechnologien</span>
+                            </div>
+                            <h2>Die Zukunft der Arbeit: Remote, Hybrid oder zurück ins Büro?</h2>
+                        </header>
+                        <div class="post-content">
+                            <p><strong>Die Arbeitswelt befindet sich im Wandel.</strong> Was vor wenigen Jahren noch undenkbar schien, ist heute Realität: Millionen von Menschen arbeiten von zu Hause aus, Teams kollaborieren über Kontinente hinweg, und traditionelle Bürostrukturen werden grundlegend hinterfragt.</p>
+                            
+                            <h3>Die drei Arbeitsmodelle im Vergleich</h3>
+                            
+                            <h4>1. Remote Work - Die vollständige Dezentralisierung</h4>
+                            <p><strong>Vorteile:</strong></p>
+                            <ul>
+                                <li>Maximale Flexibilität für Mitarbeiter</li>
+                                <li>Kosteneinsparungen bei Büroflächen</li>
+                                <li>Zugang zu globalem Talentpool</li>
+                                <li>Bessere Work-Life-Balance</li>
+                            </ul>
+                            
+                            <p><strong>Nachteile:</strong></p>
+                            <ul>
+                                <li>Herausforderungen bei der Teamkommunikation</li>
+                                <li>Schwierigkeiten beim Onboarding neuer Mitarbeiter</li>
+                                <li>Potenzielle Isolation der Teammitglieder</li>
+                            </ul>
+                            
+                            <h4>2. Hybride Modelle - Das Beste aus beiden Welten</h4>
+                            <p>Hybride Arbeitsmodelle kombinieren die Vorteile von Büro- und Heimarbeit. Typische Aufteilungen sind 2-3 Tage im Büro und 2-3 Tage im Homeoffice.</p>
+                            
+                            <blockquote>
+                                "Hybride Arbeitsmodelle erfordern eine völlig neue Herangehensweise an Führung und Zusammenarbeit." - Dr. Michael Weber
+                            </blockquote>
+                            
+                            <h4>3. Rückkehr ins Büro - Tradition trifft Innovation</h4>
+                            <p>Einige Unternehmen setzen wieder verstärkt auf Präsenzarbeit, allerdings mit modernisierten Bürokonzepten und flexibleren Arbeitszeiten.</p>
+                            
+                            <h3>Technologische Enabler</h3>
+                            <p>Die erfolgreiche Umsetzung moderner Arbeitsmodelle hängt maßgeblich von der richtigen Technologie ab:</p>
+                            
+                            <ol>
+                                <li><strong>Kollaborationstools:</strong> Slack, Microsoft Teams, Zoom</li>
+                                <li><strong>Projektmanagement:</strong> Asana, Trello, Jira</li>
+                                <li><strong>Cloud-Infrastruktur:</strong> AWS, Azure, Google Cloud</li>
+                                <li><strong>Sicherheitslösungen:</strong> VPN, Zero-Trust-Architekturen</li>
+                            </ol>
+                            
+                            <h3>Fazit</h3>
+                            <p>Die Zukunft der Arbeit wird nicht von einem einzigen Modell dominiert werden. Stattdessen werden Unternehmen individuelle Lösungen entwickeln, die zu ihrer Kultur, ihren Zielen und den Bedürfnissen ihrer Mitarbeiter passen.</p>
+                            
+                            <p><em>Was denkst du über die Zukunft der Arbeit? Teile deine Gedanken in den Kommentaren!</em></p>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Kategorien</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Künstliche Intelligenz (12)</a></li>
+                            <li><a href="#">Blockchain (8)</a></li>
+                            <li><a href="#">Cybersecurity (15)</a></li>
+                            <li><a href="#">Cloud Computing (10)</a></li>
+                            <li><a href="#">IoT (6)</a></li>
+                            <li><a href="#">Quantentechnologie (4)</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Beliebte Artikel</h3>
+                        <div class="popular-posts">
+                            <article class="popular-post">
+                                <img src="/placeholder.svg?height=60&width=80" alt="KI Trends">
+                                <div>
+                                    <h4><a href="#">KI-Trends 2024: Was uns erwartet</a></h4>
+                                    <time>12. Januar 2024</time>
+                                </div>
+                            </article>
+                            <article class="popular-post">
+                                <img src="/placeholder.svg?height=60&width=80" alt="Cloud Migration">
+                                <div>
+                                    <h4><a href="#">Cloud Migration: Best Practices</a></h4>
+                                    <time>8. Januar 2024</time>
+                                </div>
+                            </article>
+                            <article class="popular-post">
+                                <img src="/placeholder.svg?height=60&width=80" alt="Cybersecurity">
+                                <div>
+                                    <h4><a href="#">Zero Trust: Die Zukunft der IT-Sicherheit</a></h4>
+                                    <time>5. Januar 2024</time>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Newsletter</h3>
+                        <p>Bleiben Sie auf dem Laufenden mit unserem wöchentlichen Newsletter.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+                            <button type="submit">Abonnieren</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechVision</h4>
+                    <p>Innovative Technologielösungen für eine digitale Zukunft.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardwareTech - Premium Computer Hardware</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="HardwareTech Logo" class="logo-img">
+                    <span class="logo-text">HardwareTech</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link active">Start</a></li>
+                        <li><a href="products.html" class="nav-link">Produkte</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                        <li><a href="cart.html" class="nav-link cart-link">
+                            🛒 <span class="cart-count" id="cartCount">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Premium Computer Hardware</h1>
+                    <p class="hero-subtitle">Hochleistungs-PCs, Gaming-Laptops und Workstations für Profis</p>
+                    <div class="hero-buttons">
+                        <a href="products.html" class="btn btn-primary">Produkte entdecken</a>
+                        <a href="contact.html" class="btn btn-secondary">Beratung anfragen</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Premium Gaming Setup">
+                </div>
+            </div>
+        </section>
+
+        <section class="news-teaser">
+            <div class="container">
+                <h2 class="section-title">Aktuelle Hardware News</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="RTX 4090" class="news-image">
+                        <div class="news-content">
+                            <h3>RTX 4090: Die ultimative Gaming-Grafikkarte</h3>
+                            <p>Entdecken Sie die neueste Generation der NVIDIA GeForce RTX 4090 mit bahnbrechender Performance...</p>
+                            <a href="news.html#article1" class="read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Intel 13th Gen" class="news-image">
+                        <div class="news-content">
+                            <h3>Intel 13. Generation: Raptor Lake im Test</h3>
+                            <p>Die neuen Intel Core Prozessoren der 13. Generation bieten bis zu 20% mehr Performance...</p>
+                            <a href="news.html#article2" class="read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="DDR5 RAM" class="news-image">
+                        <div class="news-content">
+                            <h3>DDR5 RAM: Der neue Standard für Gaming</h3>
+                            <p>DDR5-Arbeitsspeicher revolutioniert die Performance mit höheren Geschwindigkeiten...</p>
+                            <a href="news.html#article3" class="read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Warum HardwareTech?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Premium Qualität</h3>
+                        <p>Nur die besten Komponenten von führenden Herstellern wie NVIDIA, Intel und AMD.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Maximale Performance</h3>
+                        <p>Optimierte Systeme für Gaming, Content Creation und professionelle Anwendungen.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>Expertensupport</h3>
+                        <p>Professionelle Beratung und technischer Support von Hardware-Experten.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>Schnelle Lieferung</h3>
+                        <p>Kostenloser Versand und Express-Lieferung für alle Bestellungen über 500€.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Bestseller</h2>
+                <div class="products-grid" id="featuredProducts">
+                    <!-- Wird dynamisch geladen -->
+                </div>
+                <div class="text-center">
+                    <a href="products.html" class="btn btn-primary">Alle Produkte ansehen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HardwareTech</h4>
+                    <p>Premium Computer Hardware für Gaming, Workstations und Server.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="products.html">Produkte</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HardwareTech. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script>
+        // Lade Featured Products
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/api/products?sort=rating');
+                const products = await response.json();
+                const featuredProducts = products.slice(0, 4);
+                
+                const container = document.getElementById('featuredProducts');
+                container.innerHTML = featuredProducts.map(product => `
+                    <div class="product-card">
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <div class="product-info">
+                            <h3>${product.name}</h3>
+                            <p class="product-price">${product.price.toFixed(2)}€</p>
+                            <div class="product-rating">
+                                ${'★'.repeat(Math.floor(product.rating))} ${product.rating}
+                            </div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="${product.id}">
+                                In den Warenkorb
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+                
+                // Event Listener für Warenkorb-Buttons
+                container.querySelectorAll('.add-to-cart').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const productId = parseInt(e.target.dataset.productId);
+                        const product = featuredProducts.find(p => p.id === productId);
+                        if (product) {
+                            window.cart.addItem(product);
+                            btn.textContent = 'Hinzugefügt!';
+                            btn.disabled = true;
+                            setTimeout(() => {
+                                btn.textContent = 'In den Warenkorb';
+                                btn.disabled = false;
+                            }, 2000);
+                        }
+                    });
+                });
+                
+            } catch (error) {
+                console.error('Fehler beim Laden der Produkte:', error);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - TechVision</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="TechVision Logo" class="logo-img">
+                    <span class="logo-text">TechVision</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Start</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link active">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Kontakt</h1>
+            <p class="page-subtitle">Nehmen Sie Kontakt mit uns auf - wir freuen uns auf Ihre Nachricht!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Adresse</h3>
+                        <p>TechVision<br>
+                        Lendersdorfer Str. 10<br>
+                        52355 Düren, Deutschland</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telefon</h3>
+                        <p>+49 01522 7259500<br>
+                        Mo-Fr: 9:00 - 18:00 Uhr</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>E-Mail</h3>
+                        <p>ferhatsenol.nrw@gmail.com<br>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">🌐</div>
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Xing</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Unternehmen</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <select id="subject" name="subject">
+                                <option value="">Bitte wählen...</option>
+                                <option value="general">Allgemeine Anfrage</option>
+                                <option value="support">Support</option>
+                                <option value="partnership">Partnerschaft</option>
+                                <option value="career">Karriere</option>
+                                <option value="press">Presse</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Beschreiben Sie Ihr Anliegen..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Ich möchte den Newsletter erhalten und über Neuigkeiten informiert werden.
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span class="btn-text">Nachricht senden</span>
+                            <span class="btn-loading" style="display: none;">Wird gesendet...</span>
+                        </button>
+                    </form>
+                    
+                    <div class="form-message" id="formMessage" style="display: none;"></div>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h2>Unser Standort</h2>
+                <div class="map-placeholder">
+                    <img src="/placeholder.svg?height=300&width=800" alt="Karte Berlin Standort" class="map-image">
+                    <div class="map-overlay">
+                        <p>📍 TechVision, Lendersdorfer Str.10, 52355 Düren</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechVision</h4>
+                    <p>Innovative Technologielösungen für eine digitale Zukunft.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

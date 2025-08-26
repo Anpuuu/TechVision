@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte - HardwareTech</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="HardwareTech Logo" class="logo-img">
+                    <span class="logo-text">HardwareTech</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Start</a></li>
+                        <li><a href="products.html" class="nav-link active">Produkte</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                        <li><a href="cart.html" class="nav-link cart-link">
+                            🛒 <span class="cart-count" id="cartCount">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Unsere Produkte</h1>
+            <p class="page-subtitle">Premium Computer Hardware für jeden Bedarf</p>
+            
+            <div class="products-filters">
+                <div class="filter-section">
+                    <h3>Kategorien</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">Alle</button>
+                        <button class="filter-btn" data-category="laptops">Laptops</button>
+                        <button class="filter-btn" data-category="desktops">Desktops</button>
+                        <button class="filter-btn" data-category="servers">Server</button>
+                        <button class="filter-btn" data-category="mini-pcs">Mini PCs</button>
+                        <button class="filter-btn" data-category="storage">Storage</button>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Sortierung</h3>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="">Standard</option>
+                        <option value="price-low">Preis: Niedrig → Hoch</option>
+                        <option value="price-high">Preis: Hoch → Niedrig</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="rating">Bewertung</option>
+                    </select>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Suche</h3>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Produkt suchen...">
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Wird dynamisch geladen -->
+            </div>
+            
+            <div class="loading" id="loading" style="display: none;">
+                <p>Produkte werden geladen...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HardwareTech</h4>
+                    <p>Premium Computer Hardware für Gaming, Workstations und Server.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="products.html">Produkte</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500<br>
+                    Support: Mo-Fr 9-18 Uhr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HardwareTech. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/products.js"></script>
+</body>
+</html>

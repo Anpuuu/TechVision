@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - TechVision</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=150" alt="TechVision Logo" class="logo-img">
+                    <span class="logo-text">TechVision</span>
+                </div>
+                <nav class="nav">
+                    <div class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Start</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link active">Galerie</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Galerie</h1>
+            <p class="page-subtitle">Entdecken Sie unsere Projekte und Technologien in Bildern</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="projects">Projekte</button>
+                <button class="filter-btn" data-filter="technology">Technologie</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="projects">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Smart City Projekt" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Smart City Projekt</h3>
+                        <p>Intelligente Stadtplanung mit IoT-Sensoren</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="technology">
+                    <img src="/placeholder.svg?height=300&width=400" alt="KI-Algorithmus" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>KI-Algorithmus</h3>
+                        <p>Maschinelles Lernen in der Praxis</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="team">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Entwicklerteam" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Unser Entwicklerteam</h3>
+                        <p>Experten für innovative Lösungen</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="projects">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Blockchain Lösung" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Blockchain Lösung</h3>
+                        <p>Sichere Transaktionen der Zukunft</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="technology">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Robotik Labor" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Robotik Labor</h3>
+                        <p>Entwicklung autonomer Systeme</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="projects">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Cloud Infrastructure" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Cloud Infrastructure</h3>
+                        <p>Skalierbare Serverarchitekturen</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="team">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Workshop" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Innovation Workshop</h3>
+                        <p>Kreative Problemlösungen entwickeln</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="technology">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Quantum Computing" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Quantum Computing</h3>
+                        <p>Die Zukunft der Datenverarbeitung</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="projects">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Green Tech" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Green Tech Initiative</h3>
+                        <p>Nachhaltige Technologielösungen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="/placeholder.svg" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+                <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechVision</h4>
+                    <p>Innovative Technologielösungen für eine digitale Zukunft.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: ferhatsenol.nrw@gmail.com<br>
+                    Tel: +49 01522 7259500</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>
